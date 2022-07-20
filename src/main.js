@@ -1,5 +1,10 @@
-import { createApp } from 'vue'
+import {createApp} from 'vue'
 import App from './App.vue'
 import router from './router'
 
-createApp(App).use(router).mount('#app')
+//引入pinia
+import Pinia from "@/plugin/pinia";
+//引入全局样式文件
+// import "./style/index.scss"
+
+createApp(App).use(router).use(Pinia).mount('#app')
