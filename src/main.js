@@ -6,5 +6,7 @@ import router from './router'
 import Pinia from "@/plugin/pinia";
 //引入全局样式文件
 import "./style/index.scss"
+//引入Mock
+require("./mock")
 
 createApp(App).use(router).use(Pinia).mount('#app')
