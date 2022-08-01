@@ -1,6 +1,6 @@
 <template>
     <div id="aside-wrap">
-
+        
     </div>
 </template>
 
@@ -10,6 +10,6 @@
 
 <style lang="scss" scoped>
 #aside-wrap {
-    
+    height: 100vh;
 }
 </style>
