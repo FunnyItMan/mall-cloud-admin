@@ -9,4 +9,7 @@ import "./style/index.scss"
 //引入Mock
 require("./mock")
 
-createApp(App).use(router).use(Pinia).mount('#app')
+import ElementPlus from 'element-plus'
+import 'element-plus/dist/index.css'
+
+createApp(App).use(router).use(Pinia).use(ElementPlus).mount('#app')

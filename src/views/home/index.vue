@@ -1,9 +1,11 @@
 <template>
-
+  home
 </template>
 
-<script setup>
-
+<script>
+export default {
+  name: "index"
+}
 </script>
 
 <style scoped>
