@@ -1,7 +1,7 @@
 <template>
-    <div id="aside-wrap">
+    <el-aside id="aside-wrap">
         
-    </div>
+    </el-aside>
 </template>
 
 <script setup>
@@ -11,5 +11,6 @@
 <style lang="scss" scoped>
 #aside-wrap {
     height: 100vh;
+    width: 200px;
 }
 </style>
