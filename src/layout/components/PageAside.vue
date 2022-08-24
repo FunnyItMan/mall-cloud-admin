@@ -1,10 +1,10 @@
 <template>
   <el-aside id="aside-wrap">
     <div class="logo-box">
-        <div class="logo">
+      <div class="logo">
 
-        </div>
-        <h3>后台管理系统</h3>
+      </div>
+      <h3>后台管理系统</h3>
     </div>
     <el-menu
         unique-opened
@@ -13,34 +13,35 @@
         background-color="#e75555"
         text-color="#ffffff"
         active-text-color="#409EFF"
+        router
     >
-      <el-menu-item index="1">
+      <el-menu-item index="/home">
         <el-icon>
           <HomeFilled/>
         </el-icon>
         <span>首页</span>
       </el-menu-item>
 
-      <el-sub-menu index="2">
+      <el-sub-menu>
         <template #title>
           <el-icon>
             <Setting/>
           </el-icon>
           <span>系统管理</span>
         </template>
-        <el-menu-item index="2-1">
+        <el-menu-item index="/setting/user">
           <el-icon>
             <User/>
           </el-icon>
           <span>用户管理</span>
         </el-menu-item>
-        <el-menu-item index="2-2">
+        <el-menu-item index="/setting/role">
           <el-icon>
             <Operation/>
           </el-icon>
           <span>角色管理</span>
         </el-menu-item>
-        <el-menu-item index="2-3">
+        <el-menu-item index="/setting/permission">
           <el-icon>
             <Document/>
           </el-icon>
@@ -52,7 +53,7 @@
 </template>
 
 <script setup>
-import {Document, HomeFilled, Setting, User,Operation} from '@element-plus/icons-vue'</script>
+import {Document, HomeFilled, Operation, Setting, User} from '@element-plus/icons-vue'</script>
 
 <style lang="scss" scoped>
 #aside-wrap {
